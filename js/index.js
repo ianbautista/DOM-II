@@ -8,15 +8,15 @@ navLinks.forEach((link) => {
 		evt.target.style.background = "#34C1DB";
 		evt.target.style.color = "white";
 	});
-	link.addEventListener("mouseout", function (event) {
-		event.target.style.background = "none";
-		event.target.style.color = "#212529";
+	link.addEventListener("mouseout", (evt) => {
+		evt.target.style.background = "none";
+		evt.target.style.color = "#212529";
 	});
 });
 
 // shows a message upon press of any key, used event keydown
 
-window.addEventListener("keydown", function () {
+window.addEventListener("keydown", () => {
 	alert(`Ooops!!! Stop pressing that!`);
 });
 
